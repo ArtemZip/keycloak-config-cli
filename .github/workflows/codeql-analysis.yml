@@ -27,7 +27,7 @@ jobs:
       with:
         languages: java
 
-    - uses: actions/cache@v2
+    - uses: actions/cache@v2.1.4
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-codeql-${{ hashFiles('**/pom.xml') }}
